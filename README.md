@@ -1,1 +1,4 @@
 # javascriptFun
+
+
+- (test)[spread-operator]
