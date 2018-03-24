@@ -1,4 +1,4 @@
 # javascriptFun
 
 
-- (test)[spread-operator]
+- [test](spread-operator.md)
