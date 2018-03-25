@@ -116,6 +116,16 @@ doStuff(...condition ? [value] : [])
 >> {2, 3}
 ```
 
+### Set diference
+
+```javascript
+> const a = new Set([1,2,3]);
+> const b = new Set([4,3,2]);
+> const difference = new Set([...a].filter(x => !b.has(x)));
+
+>> {1}
+```
+
 sources:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 - https://davidwalsh.name/spread-operator
