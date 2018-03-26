@@ -9,3 +9,10 @@
 
 >> [2, 3, 4, 1]
 ```
+
+```javascript
+> const arr = [1, 1, 2];
+> const uniques = [... new Set(arr)];
+
+>> [2, 3, 4, 1]
+```
