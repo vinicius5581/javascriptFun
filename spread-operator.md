@@ -94,6 +94,21 @@ doStuff(...condition ? [value] : [])
 > }
 ```
 
+``` javascript 
+> const test = (a) => {
+  const b = 2;
+  const c = null;
+  const d = undefined;
+  return {
+    ...(b && {b}),
+    ...(c && {c}),
+    ...(d && {d}),
+  }
+}
+
+>> {b: 2}
+```
+
 ## Sets
 
 ### Set union
