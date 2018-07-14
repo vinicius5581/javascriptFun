@@ -23,3 +23,8 @@ Emitter.prototype.emit = function(type) {
 
 module.exports = Emitter;
 ```
+
+```javascript
+var Emitter = require('./emitter');
+var emtr = new Emitter();
+```
