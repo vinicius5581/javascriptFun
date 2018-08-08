@@ -25,7 +25,7 @@ var myRevealingModule = function() {
   };
 }();
 ```
-```
+```javascript
 const myRevealingModule = (() => {
   let privateVar = 'Ben Cherry';
   const publicVar = 'Hey There';
