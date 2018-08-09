@@ -1,4 +1,4 @@
-```javsacript
+```javascript
 function Product(name, price) {
   this.name = name;
   this.price = price;
