@@ -5,24 +5,26 @@ const getMaxArea = hist => {
 	const stack = [];
   let max = 0;
   let i = 0;
-  while(i < hist.length) {
+  
+  hist.forEach((colHeigh, i) => {
   	if (!stack.length || stack[stack.length - 1] <= hist[i]) {
     	stack.push(i);
       i++;
     } else {
     	let heightOfCurrentIndex = stack.pop();
       let area = hist[heightOfCurrentIndex] * (!stack.length ? i - 1 : i - 1 - stack[stack.length - 1]);
-      if (area > max) { 
-        max = area;
-      }
+      if (area > max) {
+				max = area;
+			}
     }
-  }
+  });
+
   while (stack.length) {
-  	let heightOfCurrentIndex = stack.pop();
+  	  let heightOfCurrentIndex = stack.pop();
       let area = hist[heightOfCurrentIndex] * (!stack.length ? i - 1 : i - 1 - stack[stack.length - 1]);
-      if (area > max) { 
-        max = area;
-      }
+      if (area > max) {
+				max = area;
+			}
   }
   return max;
 };
