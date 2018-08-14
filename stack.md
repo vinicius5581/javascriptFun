@@ -13,7 +13,7 @@ class Stack {
      items.forEach(item => {
       this.items.push(item);
       this.count = this.count + 1;
-     );
+     });
      return this; 
   }
   
