@@ -9,9 +9,12 @@ class Stack {
     return this.count;
   }
   
-  push(item) {
-    this.items.push(item);
-    this.count = this.count + 1;
+  push(...items){
+     items.forEach(item => {
+      this.items.push(item);
+      this.count = this.count + 1;
+     );
+     return this; 
   }
   
   pop() {
